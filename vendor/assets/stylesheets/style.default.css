@@ -22,6 +22,7 @@ body {
   background-position: center center;
   overflow: hidden;
   background-attachment: fixed;
+  background-image: image-url('ein-steig.jpg');
 }
 .intro h1,
 .intro h2,

@@ -1,6 +1,6 @@
 <body data-spy="scroll" data-target="#navigation" data-offset="120">
   <!-- intro-->
-  <section id="intro" style="background-image: url('assets/ein-steig.jpg');" class="intro">      
+  <section id="intro" class="intro">      
     <div class="overlay"></div>
     <div class="content">
       <div class="container clearfix">
@@ -21,7 +21,8 @@
       <div role="navigation" class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-btn btn-sm navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#intro" class="navbar-brand scroll-to"><img src="assets/logo.png" alt=""></a>
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-btn btn-sm navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#intro" class="navbar-brand scroll-to">
+            <%= image_tag "logo.png" %></a>
           </div>
           <div id="navigation" class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
@@ -49,7 +50,7 @@
           <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
         </div>
         <div class="col-md-5 col-md-offset-1">
-          <p><img src="assets/japan-mountains.jpg" alt="" class="img-responsive img-circle"></p>
+          <p><%= image_tag "japan-mountains.jpg", class:"img-responsive img-circle" %></p>
         </div>
       </div>
     </div>
@@ -103,35 +104,35 @@
           </div>
           <div class="row">
             <div class="col-sm-4">
-              <div class="box"><a href="assets/portfolio-1.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="Some footer information"><img src="assets/portfolio-1.jpg" alt="" class="img-responsive"></a></div>
+              <div class="box"><a href="<%= asset_path 'portfolio-1.jpg' %>" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="Some footer information"><%= image_tag "portfolio-1.jpg", class: "img-responsive" %></a></div>
+           </div>
+            <div class="col-sm-4">
+              <div class="box"><a href="<%= asset_path 'portfolio-2.jpg' %>" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 2" data-footer="Some footer information"><%= image_tag "portfolio-2.jpg", class: "img-responsive" %></div>
             </div>
             <div class="col-sm-4">
-              <div class="box"><a href="assets/portfolio-2.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 2" data-footer="Some footer information"><img src="assets/portfolio-2.jpg" alt="" class="img-responsive"></a></div>
-            </div>
-            <div class="col-sm-4">
-              <div class="box"><a href="assets/portfolio-3.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 3" data-footer="Some footer information"><img src="assets/portfolio-3.jpg" alt="" class="img-responsive"></a></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="box"><a href="assets/portfolio-4.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 4" data-footer="Some footer information"><img src="assets/portfolio-4.jpg" alt="" class="img-responsive"></a></div>
-            </div>
-            <div class="col-sm-4">
-              <div class="box"><a href="assets/portfolio-5.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 5" data-footer="Some footer information"><img src="assets/portfolio-5.jpg" alt="" class="img-responsive"></a></div>
-            </div>
-            <div class="col-sm-4">
-              <div class="box"><a href="assets/portfolio-6.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 6" data-footer="Some footer information"><img src="assets/portfolio-6.jpg" alt="" class="img-responsive"></a></div>
+              <div class="box"><a href="<%= asset_path 'portfolio-3.jpg' %>" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 3" data-footer="Some footer information"><%= image_tag "portfolio-3.jpg", class: "img-responsive" %></a></div>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-4">
-              <div class="box"><a href="assets/portfolio-7.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 7" data-footer="Some footer information"><img src="assets/portfolio-7.jpg" alt="" class="img-responsive"></a></div>
+              <div class="box"><a href="<%= asset_path 'portfolio-4.jpg' %>" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 4" data-footer="Some footer information"><%= image_tag "portfolio-4.jpg", class: "img-responsive" %></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box"><a href="<%= asset_path 'portfolio-5.jpg' %>" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 5" data-footer="Some footer information"><%= image_tag "portfolio-5.jpg", class: "img-responsive" %></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box"><a href="<%= asset_path 'portfolio-6.jpg' %>" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 6" data-footer="Some footer information"><%= image_tag "portfolio-6.jpg", class: "img-responsive" %></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="box"><a href="<%= asset_path 'portfolio-7.jpg' %>" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 7" data-footer="Some footer information"><%= image_tag "portfolio-7.jpg", class: "img-responsive" %></div>
             </div></a>
             <div class="col-sm-4">
-              <div class="box"><a href="assets/portfolio-8.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 8" data-footer="Some footer information"><img src="assets/portfolio-8.jpg" alt="" class="img-responsive"></a></div>
+              <div class="box"><a href="<%= asset_path 'portfolio-8.jpg' %>" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 8" data-footer="Some footer information"><%= image_tag "portfolio-8.jpg", class: "img-responsive" %></div>
             </div></a>
             <div class="col-sm-4">
-              <div class="box"><a href="assets/portfolio-9.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 9" data-footer="Some footer information"><img src="assets/portfolio-9.jpg" alt="" class="img-responsive"></a></div>
+              <div class="box"><a href="<%= asset_path 'portfolio-9.jpg' %>" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 9" data-footer="Some footer information"><%= image_tag "portfolio-9.jpg", class: "img-responsive" %></div>
             </div></a>
           </div>
         </div>
