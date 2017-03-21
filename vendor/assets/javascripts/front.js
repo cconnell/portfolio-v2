@@ -117,11 +117,14 @@ function utils() {
     $('.scroll-to, #navigation a').click(function (event) {
         event.preventDefault();
         var full_url = this.href;
-        var parts = full_url.split("#");
-        var trgt = parts[1];
+        if(full_url.includes("blogs")) {
+            window.location.href = "/blogs";        
+        } else {
+            var parts = full_url.split("#");
+            var trgt = parts[1];
 
-        $('body').scrollTo($('#' + trgt), 800, {offset: -40});
-
+            $('body').scrollTo($('#' + trgt), 800, {offset: -40});
+        }
     });
 
 }
