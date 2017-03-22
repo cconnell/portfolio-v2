@@ -117,8 +117,8 @@ function utils() {
     $('.scroll-to, #navigation a').click(function (event) {
         event.preventDefault();
         var full_url = this.href;
-        if(full_url.includes("blogs")) {
-            window.location.href = "/blogs";        
+        if(full_url.includes("blog")) {
+            window.location.href = "/blog_posts";        
         } else {
             var parts = full_url.split("#");
             var trgt = parts[1];
