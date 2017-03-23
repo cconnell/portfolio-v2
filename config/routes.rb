@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   post '/messages' => 'messages#create'
 
+  resources :blog_posts
 end
