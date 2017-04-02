@@ -20,9 +20,3 @@
 //= require front
 //= require turbolinks
 //= require_tree .
-
-
-$(document).ready(function() {
-  $('#summer').summernote();
-  console.log("hey");
-});
