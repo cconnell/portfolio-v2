@@ -25,21 +25,22 @@
   <!-- text page-->
   <section id="text">
     <div class="container">
-    <h2>Blog comming soon!<h2>
-    <h2>It'll be worth the wait, promise.</h2>
       <% if @blog_posts %>
         <% @blog_posts.each do |post| %>
           <div class="row">
             <div class="col-md-12">
-              <h2 class="heading"><a href="blog_posts/<%= post.id %>"><%= post.title %></a></h2>
+              <h2 class="heading"><%= link_to post.title, blog_post_path(post) %></h2>
               <div class="row">
                 <div class="col-md-12 col-md-12-offset-2">
-                  <p><%= post.body %></p>
+                  <p><%= post.body.html_safe %></p>
                 </div>
               </div>
             </div>
           </div>
         <% end %>
+      <% else %>
+        <h2>Blog comming soon!<h2>
+        <h2>It'll be worth the wait, promise.</h2>  
       <% end %>
     </div>
   </section>

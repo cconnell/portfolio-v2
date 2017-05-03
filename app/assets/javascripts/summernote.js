@@ -1,3 +1,5 @@
 $(document).ready(function() {
-  $('#summer').summernote();
+  $('#summer').summernote( {
+    height: 400,
+  });
 });
