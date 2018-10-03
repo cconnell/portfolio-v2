@@ -1,4 +1,5 @@
 # README
 
 TODO:
-*Remove blog
+* Remove blog
+* Update projects/or remove
